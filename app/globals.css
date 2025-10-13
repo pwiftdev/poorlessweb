@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-poorless-dark via-[#1a1a1a] to-poorless-dark text-white overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-poorless-mint to-poorless-gold bg-clip-text text-transparent;
+  }
+
+  .glow-mint {
+    filter: drop-shadow(0 0 40px rgba(95, 206, 167, 0.6));
+  }
+
+  .glow-gold {
+    filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.5));
+  }
+}
+
