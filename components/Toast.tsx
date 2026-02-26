@@ -21,10 +21,10 @@ export default function Toast({ show, message }: ToastProps) {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 bg-gradient-to-r from-poorless-mint to-[#3BA87C] text-white 
+      className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-poorless-mint to-[#3BA87C] text-white 
                   px-8 py-4 rounded-xl shadow-[0_8px_25px_rgba(95,206,167,0.4)] flex items-center gap-4 
                   font-semibold z-50 transition-all duration-400 ${
-                    visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-24'
+                    visible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
                   }`}
     >
       <FaCheck className="text-xl" />

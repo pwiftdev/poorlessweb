@@ -174,16 +174,6 @@ export default function MarketCapButton() {
               </div>
             </div>
 
-            <a
-              href="https://dexscreener.com/solana/enexcb5j81zdmaexxugnf3ddvbusytmtrxe2o3tyewng"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="block text-center bg-white/10 hover:bg-white/20 py-2 rounded-lg 
-                       transition-colors duration-200 text-sm font-semibold mt-2"
-            >
-              View Full Chart →
-            </a>
           </div>
         )}
       </div>

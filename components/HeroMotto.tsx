@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { FaRocket } from 'react-icons/fa'
 
 export default function HeroMotto() {
   const [isVisible, setIsVisible] = useState(false)
@@ -61,8 +60,7 @@ export default function HeroMotto() {
             </div>
             
             <p className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-relaxed">
-              Get rich or{' '}
-              <span className="text-gradient">meme trying</span>
+              <span className="text-gradient">Stop being poor.</span>
             </p>
             
             <div className="mt-6 flex items-center justify-center gap-3">
@@ -76,27 +74,16 @@ export default function HeroMotto() {
         </div>
       </div>
 
-      {/* Call to Action */}
+      {/* Coming Soon */}
       <div
         className={`transition-all duration-1000 delay-700 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
-        <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <button
-            onClick={() => document.getElementById('contract')?.scrollIntoView({ behavior: 'smooth' })}
-            className="group bg-gradient-to-r from-poorless-mint to-[#3BA87C] text-white font-bold text-lg 
-                     px-10 py-5 rounded-full flex items-center gap-3 transition-all duration-300 
-                     hover:scale-105 hover:shadow-[0_10px_40px_rgba(95,206,167,0.5)] 
-                     border-2 border-transparent hover:border-poorless-mint"
-          >
-            <FaRocket className="text-2xl group-hover:rotate-45 transition-transform duration-300" />
-            <span>Join The Movement</span>
-          </button>
-          
+        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
           <div className="flex items-center gap-2 text-poorless-gold/80">
             <div className="w-2 h-2 bg-poorless-gold rounded-full animate-pulse" />
-            <span className="text-sm font-semibold">Live on Solana</span>
+            <span className="text-sm font-semibold">CA will be posted in X comms.</span>
           </div>
         </div>
       </div>
