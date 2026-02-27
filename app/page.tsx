@@ -11,6 +11,9 @@ import Features from '@/components/Features'
 import WojakFloat from '@/components/WojakFloat'
 import UPoorButton from '@/components/UPoorButton'
 import XButton from '@/components/XButton'
+import CopyButton from '@/components/CopyButton'
+
+const CONTRACT_ADDRESS = 'HXRwCagMA6cYkz46RaHb5B8WmRGs7vnzqYATMPd7pump'
 
 export default function Home() {
 
@@ -86,6 +89,30 @@ export default function Home() {
 
         {/* Starter Pack */}
         <StarterPack />
+
+        {/* Contract Section */}
+        <section id="contract" className="max-w-6xl mx-auto px-4 py-20">
+          <div className="bg-gradient-to-br from-poorless-mint/10 via-transparent to-poorless-gold/10 
+                        border-2 border-poorless-mint rounded-3xl p-8 md:p-12 backdrop-blur-xl
+                        shadow-[0_0_80px_rgba(95,206,167,0.2)]">
+            <h2 className="text-3xl md:text-4xl font-black text-center text-poorless-gold mb-8">
+              Contract Address
+            </h2>
+            
+            <div className="text-center mb-8">
+              <div className="inline-block bg-poorless-mint/10 border border-poorless-mint/30 rounded-full px-6 py-2 mb-4">
+                <span className="text-poorless-mint font-semibold">Solana</span>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center gap-4 bg-black/50 p-6 rounded-2xl border-2 border-poorless-mint/30 mb-8">
+              <div className="flex-1 font-mono text-sm md:text-lg text-poorless-mint break-all text-center md:text-left">
+                {CONTRACT_ADDRESS}
+              </div>
+              <CopyButton contractAddress={CONTRACT_ADDRESS} />
+            </div>
+          </div>
+        </section>
 
         {/* Footer */}
         <footer className="text-center py-12 text-gray-500 mt-20 border-t border-poorless-mint/10">
